@@ -155,8 +155,8 @@ int main(int argc, char **argv) {
                         printf("Executing commands:\n");
                         for (i = 2; i < argc; i++)
                                 printf("\targv[%i]: %s\n", i-2, argv[i]);
-                        ret = fork();
 #endif /* #ifdef DEBUG */
+                        ret = fork();
                         /* If we're the child code, execute argv[3]... */
                         if (0 == ret) {
                                 execvp(argv[2], argv+2);
