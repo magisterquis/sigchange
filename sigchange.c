@@ -122,7 +122,8 @@ int main(int argc, char **argv) {
 
                 /* Nothing has happened */
                 if (0 == ret) {
-                        syslog(LOG_INFO, "Still waiting");
+                        syslog(LOG_INFO, "Still waiting for changes to %s",
+                                        argv[1]);
                         continue;
                 }
 
