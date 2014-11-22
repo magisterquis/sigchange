@@ -25,3 +25,7 @@ Keep track of when someone changes /etc/hosts
 Restart dnsmasq when its config file changes
 
     sigchange /etc/dnsmasq.conf sudo /etc/rc.d/dnsmasq restart
+
+Gotchas
+-------
+This program uses kqueues, so it probably won't work on Linux.
