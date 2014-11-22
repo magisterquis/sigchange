@@ -22,8 +22,8 @@
 #include <unistd.h>
 
 #define SLEEPTIME 10 /* Number of seconds to sleep on errors */
-#define KQTIME_ 21600 /* Number of seconds to wait for kevent */
-#define KQTIME 60 /* Number of seconds to wait for kevent */
+#define KQTIME 21600 /* Number of seconds to wait for kevent */
+#define KQTIME_ 60 /* Number of seconds to wait for kevent */
 /* check_condition shortcut */
 #define CC(c, m) check_condition(ev, c, argv[1], m)
 
