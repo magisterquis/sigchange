@@ -20,3 +20,5 @@ Send a message to all users when someone tries to authenticate.
 Keep track of when someone changes /etc/hosts
     sigchange /etc/hosts date
 
+Restart dnsmasq when its config file changes
+    sigchange /etc/dnsmasq.conf sudo /etc/rc.d/dnsmasq restart
